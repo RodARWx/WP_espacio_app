@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+target/
+out/
+.next/
+.astro/
+.turbo/
+pkg/
+coverage/
+
+# Environment & secrets (OWASP A02/A05 — never commit secrets)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+
+# IDEs & OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Mobile / Desktop native build artifacts
+apps/mobile/android/app/build/
+apps/mobile/ios/App/Pods/
+apps/desktop/release/

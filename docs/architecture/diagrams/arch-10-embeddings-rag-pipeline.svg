@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="940" viewBox="0 0 1560 940">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#17324D" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#20A69A"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#E67E22"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6D28D9"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#C62828"/>
+    </marker>
+  </defs>
+  <rect width="1560" height="940" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="1560" height="74" fill="#17324D"/>
+  <rect x="0" y="74" width="1560" height="4" fill="#20A69A"/>
+  <text x="28" y="34" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">ESPACIO Embeddings &amp; RAG Pipeline Architecture (4th Database: Vector DB)</text>
+  <text x="28" y="57" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" fill="#CBD5E1">End-to-end asynchronous Outbox ingestion, deterministic chunking, HNSW pre-filtered retrieval, INV-02 anti-hallucination guardrail &amp; LLM/VLM synthesis</text>
+  <rect x="1325" y="20" width="207" height="32" rx="16" fill="#20A69A"/>
+  <text x="1429" y="41" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">GPWP-39 • ARCH-10</text>
+  <g>
+  <rect x="26" y="102" width="1508" height="250" rx="10" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="90" width="700.8000000000001" height="24" rx="5" fill="#6D28D9"/>
+  <text x="390.40000000000003" y="106" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">Phase A — Asynchronous Embeddings Ingestion &amp; Indexing Pipeline (Zero Impact on Checkout Path)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="134" width="248" height="196" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 134 H 288 Q 296 134 296 142 V 164 H 48 V 142 Q 48 134 56 134 Z" fill="#17324D"/>
+<text x="60" y="154" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">1. Knowledge Sources</text>
+<rect x="222.0" y="140" width="66.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="255.0" y="153" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Triggers</text>
+<text x="60" y="182" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">MySQL + MongoDB</text>
+<text x="60" y="198.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">PropertyPublishedEvent</text>
+<text x="60" y="215.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">PropertyUpdatedEvent</text>
+<text x="60" y="231.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">PropertyClosedEvent (Delete)</text>
+<text x="60" y="248.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Trade Templates &amp; FAQs</text>
+<text x="60" y="264.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">space_fit_templates</text>
+<text x="60" y="281.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Headless CMS Escrow Guides</text>
+<text x="60" y="297.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Transactional Outbox</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="344" y="134" width="270" height="196" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 352 134 H 606 Q 614 134 614 142 V 164 H 344 V 142 Q 344 134 352 134 Z" fill="#20A69A"/>
+<text x="356" y="154" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">2. Normalization &amp; Chunking</text>
+<rect x="542" y="140" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="574.0" y="153" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Chunker</text>
+<text x="356" y="182" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Deterministic Text Projection</text>
+<text x="356" y="198.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Property Spec Card (&lt;= 512 tok)</text>
+<text x="356" y="215.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Recursive Splitter for FAQs</text>
+<text x="356" y="231.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  (512 tokens, 64-tok overlap)</text>
+<text x="356" y="248.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Extracts Pre-Filter Metadata:</text>
+<text x="356" y="264.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  zone, monthlyRent, usableArea,</text>
+<text x="356" y="281.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  mainDoorWidth, height, status</text>
+<text x="356" y="297.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">SHA-256 contentHash dedup</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="662" y="134" width="260" height="196" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 670 134 H 914 Q 922 134 922 142 V 164 H 662 V 142 Q 662 134 670 134 Z" fill="#6D28D9"/>
+<text x="674" y="154" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">3. Embedding Model</text>
+<rect x="848.0" y="140" width="66.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="881.0" y="153" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">1536-dim</text>
+<text x="674" y="182" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Primary (QA &amp; PROD):</text>
+<text x="674" y="198.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">text-embedding-3-small</text>
+<text x="674" y="215.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">(1536 dims, Cosine metric)</text>
+<text x="674" y="231.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Local Dev Fallback:</text>
+<text x="674" y="248.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">nomic-embed-text (Ollama)</text>
+<text x="674" y="264.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Batch upsert (max 64/call)</text>
+<text x="674" y="281.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Retries + Dead-letter alert</text>
+<text x="674" y="297.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Spring AI EmbeddingModel</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="970" y="134" width="540" height="196" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 978 134 H 1502 Q 1510 134 1510 142 V 164 H 970 V 142 Q 970 134 978 134 Z" fill="#4C1D95"/>
+<text x="982" y="154" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">4. Vector Database — 4th Database (Qdrant / pgvector)</text>
+<rect x="1429.5" y="140" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1465.75" y="153" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Vector DB</text>
+<text x="982" y="182" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Collection: espacio_knowledge_v1  (HNSW: m=16, ef_construct=128, Cosine)</text>
+<text x="982" y="198.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Payload Indexes (Hard Pre-Filters BEFORE ANN Ranking):</text>
+<text x="982" y="215.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• docType: &#x27;PROPERTY&#x27; | &#x27;TRADE_TEMPLATE&#x27; | &#x27;POLICY_FAQ&#x27;</text>
+<text x="982" y="231.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• status: &#x27;AVAILABLE&#x27; (evicted immediately on PropertyClosedEvent)</text>
+<text x="982" y="248.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• zone (keyword), monthlyRent (float), totalUsableArea (float)</text>
+<text x="982" y="264.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• mainDoorWidth (float), mainDoorHeight (float), maxRoomHeight (float)</text>
+<text x="982" y="281.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Anti-Stale Rule: Closed/Rented listings purged from index in &lt; 5s</text>
+</g>
+<line x1="296" y1="232" x2="344" y2="232" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="295.4" y="215.0" width="49.2" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#6D28D9" stroke-width="0.6"/>
+<text x="320.0" y="226.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#6D28D9">Outbox</text>
+<line x1="614" y1="232" x2="662" y2="232" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="613.4" y="215.0" width="49.2" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#6D28D9" stroke-width="0.6"/>
+<text x="638.0" y="226.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#6D28D9">Chunks</text>
+<line x1="922" y1="232" x2="970" y2="232" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="921.4" y="215.0" width="49.2" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#6D28D9" stroke-width="0.6"/>
+<text x="946.0" y="226.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#6D28D9">Upsert</text>
+<g>
+  <rect x="26" y="392" width="1508" height="300" rx="10" fill="#F0FDFA" stroke="#20A69A" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="380" width="686.4" height="24" rx="5" fill="#20A69A"/>
+  <text x="383.2" y="396" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">Phase B — Online Hybrid RAG Retrieval, Deterministic Space-Fit Guardrail &amp; LLM/VLM Synthesis</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="424" width="240" height="246" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 424 H 280 Q 288 424 288 432 V 454 H 48 V 432 Q 48 424 56 424 Z" fill="#17324D"/>
+<text x="60" y="444" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">1. Query Entry Points</text>
+<rect x="216" y="430" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="248.0" y="443" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Clients</text>
+<text x="60" y="472" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">React RAG Drawer</text>
+<text x="60" y="488.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">(apps/mf-catalog)</text>
+<text x="60" y="505.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">POST /api/v1/rag/query</text>
+<text x="60" y="521.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Runtime MCP Server</text>
+<text x="60" y="538.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">search_properties_rag()</text>
+<text x="60" y="554.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">evaluate_space_fit()</text>
+<text x="60" y="571.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Optional VLM Input</text>
+<text x="60" y="587.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">2D ReferenceSketch URL</text>
+<text x="60" y="604.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Keycloak Bearer JWT</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="336" y="424" width="260" height="246" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 344 424 H 588 Q 596 424 596 432 V 454 H 336 V 432 Q 336 424 344 424 Z" fill="#20A69A"/>
+<text x="348" y="444" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">2. Query Parse &amp; Pre-Filter</text>
+<rect x="524" y="430" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="556.0" y="443" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Hybrid</text>
+<text x="348" y="472" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Hybrid Filter Extraction</text>
+<text x="348" y="488.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Extracts hard constraints:</text>
+<text x="348" y="505.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• zone == &#x27;Quito Norte&#x27;</text>
+<text x="348" y="521.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• mainDoorWidth &gt;= 0.90m</text>
+<text x="348" y="538.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• monthlyRent &lt;= $800</text>
+<text x="348" y="554.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• status == &#x27;AVAILABLE&#x27;</text>
+<text x="348" y="571.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Query Vectorization</text>
+<text x="348" y="587.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Same embedding model</text>
+<text x="348" y="604.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Top-K=5, minScore&gt;=0.72</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="644" y="424" width="266" height="246" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 652 424 H 902 Q 910 424 910 432 V 454 H 644 V 432 Q 644 424 652 424 Z" fill="#E67E22"/>
+<text x="656" y="444" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">3. Deterministic Guardrail</text>
+<rect x="838" y="430" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="870.0" y="443" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">INV-02</text>
+<text x="656" y="472" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Anti-Hallucination Check</text>
+<text x="656" y="488.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Candidate propertyIds from</text>
+<text x="656" y="505.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Vector DB are passed through</text>
+<text x="656" y="521.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Pure Java Domain Service:</text>
+<text x="656" y="538.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">SpaceFitCalculator (INV-02)</text>
+<text x="656" y="554.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Computes exact door/room</text>
+<text x="656" y="571.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  clearances &amp; 1.30x factor</text>
+<text x="656" y="587.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Verdict: FIT / TIGHT / NO_FIT</text>
+<text x="656" y="604.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">LLM NEVER guesses math</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="958" y="424" width="264" height="246" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 966 424 H 1214 Q 1222 424 1222 432 V 454 H 958 V 432 Q 958 424 966 424 Z" fill="#6D28D9"/>
+<text x="970" y="444" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">4. Prompt Augmentation</text>
+<rect x="1150" y="430" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1182.0" y="443" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Prompt</text>
+<text x="970" y="472" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Grounded System Prompt</text>
+<text x="970" y="488.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Strict citation requirement</text>
+<text x="970" y="505.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Refusal rule if context empty</text>
+<text x="970" y="521.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Injected Context Envelope</text>
+<text x="970" y="538.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Top-K Vector Chunks (IDs)</text>
+<text x="970" y="554.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Verified SpaceFit JSON</text>
+<text x="970" y="571.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Optional Sketch Image (VLM)</text>
+<text x="970" y="587.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• PII redacted before LLM</text>
+<text x="970" y="604.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Max context &lt;= 4096 tok</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1270" y="424" width="240" height="246" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1278 424 H 1502 Q 1510 424 1510 432 V 454 H 1270 V 432 Q 1270 424 1278 424 Z" fill="#0F766E"/>
+<text x="1282" y="444" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">5. LLM / VLM Response</text>
+<rect x="1438" y="430" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1470.0" y="443" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Cited</text>
+<text x="1282" y="472" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Inference Engine</text>
+<text x="1282" y="488.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">GPT-4o / Vision (VLM)</text>
+<text x="1282" y="505.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">or Ollama local model</text>
+<text x="1282" y="521.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Structured Output</text>
+<text x="1282" y="538.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Grounded natural answer</text>
+<text x="1282" y="554.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Inline citations [propId]</text>
+<text x="1282" y="571.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Exact FIT/NO_FIT badges</text>
+<text x="1282" y="587.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Latency &amp; tokens -&gt; Sentry</text>
+<text x="1282" y="604.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">ODD Trace Logged</text>
+</g>
+<line x1="288" y1="547" x2="336" y2="547" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="290.5" y="530.0" width="43.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#20A69A" stroke-width="0.6"/>
+<text x="312.0" y="541.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#20A69A">Query</text>
+<line x1="596" y1="547" x2="644" y2="547" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="598.5" y="530.0" width="43.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#20A69A" stroke-width="0.6"/>
+<text x="620.0" y="541.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#20A69A">Top-K</text>
+<line x1="910" y1="547" x2="958" y2="547" stroke="#E67E22" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<rect x="903.2" y="530.0" width="61.6" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#E67E22" stroke-width="0.6"/>
+<text x="934.0" y="541.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#E67E22">Verified</text>
+<line x1="1222" y1="547" x2="1270" y2="547" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="1221.4" y="530.0" width="49.2" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#6D28D9" stroke-width="0.6"/>
+<text x="1246.0" y="541.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#6D28D9">Prompt</text>
+<line x1="466" y1="424" x2="1100" y2="330" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="690.5" y="357" width="229.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#6D28D9" stroke-width="0.6"/>
+<text x="805" y="368" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#6D28D9">Metadata Filter + Cosine ANN Search</text>
+<g>
+  <rect x="26" y="728" width="1508" height="178" rx="10" fill="#FFFFFF" stroke="#17324D" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="716" width="477.6" height="24" rx="5" fill="#17324D"/>
+  <text x="278.8" y="732" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">RAG Governance, Security &amp; Observability Guardrails (QA &amp; PROD)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="756" width="468" height="134" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 756 H 508 Q 516 756 516 764 V 786 H 48 V 764 Q 48 756 56 756 Z" fill="#C62828"/>
+<text x="60" y="776" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Hallucination &amp; Prompt-Injection Defense</text>
+<rect x="435.5" y="762" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="471.75" y="775" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">OWASP LLM</text>
+<text x="60" y="804" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• System instructions isolated from user query &amp; property text</text>
+<text x="60" y="820.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Numeric dimensions always verified by SpaceFitCalculator (INV-02)</text>
+<text x="60" y="837.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• If top similarity &lt; 0.72, assistant replies: &#x27;Insufficient verified data&#x27;</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="544" y="756" width="470" height="134" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 552 756 H 1006 Q 1014 756 1014 764 V 786 H 544 V 764 Q 544 756 552 756 Z" fill="#17324D"/>
+<text x="556" y="776" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">RBAC &amp; Data Privacy Isolation</text>
+<rect x="942" y="762" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="974.0" y="775" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Privacy</text>
+<text x="556" y="804" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Vector DB stores ONLY public AVAILABLE property specs &amp; FAQs</text>
+<text x="556" y="820.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Zero PII (tenant emails, Stripe secrets, QR tokens) ever embedded</text>
+<text x="556" y="837.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Runtime MCP server runs strictly read-only with scoped OAuth2 token</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1042" y="756" width="470" height="134" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1050 756 H 1504 Q 1512 756 1512 764 V 786 H 1042 V 764 Q 1042 756 1050 756 Z" fill="#6D28D9"/>
+<text x="1054" y="776" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">ODD Telemetry &amp; Cost Controls</text>
+<rect x="1440" y="762" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1472.0" y="775" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">ODD</text>
+<text x="1054" y="804" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Logs correlationId, retrievalScore, tokenUsage, latencyMs in JSON</text>
+<text x="1054" y="820.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Redis caches frequent FAQ RAG responses (TTL 15m)</text>
+<text x="1054" y="837.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Sentry.io tracks embedding failures, timeouts &amp; p95 latency &gt; 3s</text>
+</g>
+  <text x="1536" y="928" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="#64748B">ESPACIO Platform Architecture • Universidad Central del Ecuador (GPWP 2026–2027)</text>
+</svg>

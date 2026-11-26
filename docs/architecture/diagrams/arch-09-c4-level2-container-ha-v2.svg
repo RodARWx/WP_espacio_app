@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#17324D" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#20A69A"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#E67E22"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6D28D9"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#C62828"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="1080" fill="#F5F7FA"/>
+  <!-- Top Header Banner -->
+  <rect x="0" y="0" width="1600" height="74" fill="#17324D"/>
+  <rect x="0" y="74" width="1600" height="4" fill="#20A69A"/>
+  <text x="28" y="34" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">C4 Level 2: ESPACIO Container Diagram &amp; QA/PROD Edge/HA Topology (v2.0)</text>
+  <text x="28" y="57" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" fill="#CBD5E1">Full deployment view: Cloudflare WAF -&gt; AWS ALB -&gt; Spring Cloud API Gateway -&gt; Multi-AZ HA Replicas -&gt; 4 Polyglot DBs + PaaS + Observability</text>
+  <rect x="1365" y="20" width="207" height="32" rx="16" fill="#20A69A"/>
+  <text x="1469" y="41" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">GPWP-38 • ARCH-09</text>
+  <g>
+  <rect x="26" y="98" width="1548" height="118" rx="10" fill="#FFF7ED" stroke="#E67E22" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="86" width="751.2" height="24" rx="5" fill="#E67E22"/>
+  <text x="415.6" y="102" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">1. Edge Layer — Cloudflare Global Network (QA: qa.espacio.app  |  PROD: espacio.app, api.espacio.app)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="124" width="340" height="76" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 124 H 380 Q 388 124 388 132 V 154 H 48 V 132 Q 48 124 56 124 Z" fill="#17324D"/>
+<text x="60" y="144" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Client Surfaces (Web / Mobile / Desktop)</text>
+<rect x="316" y="130" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="348.0" y="143" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Clients</text>
+<text x="60" y="172" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">React MFE Shell + Wasm | Astro QR | Next.js Opt</text>
+<text x="60" y="188.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Capacitor 6 &amp; Electron 33 (Keycloak PKCE)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="436" y="124" width="520" height="76" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 444 124 H 948 Q 956 124 956 132 V 154 H 436 V 132 Q 436 124 444 124 Z" fill="#E67E22"/>
+<text x="448" y="144" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Cloudflare DNS + SSL/TLS Full (Strict) + Managed WAF</text>
+<rect x="884" y="130" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="916.0" y="143" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Edge</text>
+<text x="448" y="172" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">DDoS Shield • OWASP SQLi/XSS Rules • Edge Rate Limiting • Static Asset CDN</text>
+<text x="448" y="188.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Origin IP hidden; only Cloudflare IPs whitelisted on AWS Security Groups</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1004" y="124" width="546" height="76" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1012 124 H 1542 Q 1550 124 1550 132 V 154 H 1004 V 132 Q 1004 124 1012 124 Z" fill="#C62828"/>
+<text x="1016" y="144" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Site24x7 External Monitors + Sentry.io Telemetry Ingest</text>
+<rect x="1443.5" y="130" width="98.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1492.75" y="143" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Observability</text>
+<text x="1016" y="172" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Site24x7 probes /actuator/health &amp; /p/qr every 1 min (QA) &amp; 30s (PROD)</text>
+<text x="1016" y="188.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Sentry.io receives FE/BE exceptions, spans &amp; source maps tagged env=qa|prod</text>
+</g>
+<line x1="388" y1="162" x2="436" y2="162" stroke="#E67E22" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<rect x="384.3" y="145.0" width="55.4" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#E67E22" stroke-width="0.6"/>
+<text x="412.0" y="156.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#E67E22">TLS 1.3</text>
+<g>
+  <rect x="26" y="246" width="1548" height="560" rx="10" fill="#EDF2F7" stroke="#17324D" stroke-width="1.6"/>
+  <rect x="40" y="234" width="700.8000000000001" height="24" rx="5" fill="#17324D"/>
+  <text x="390.40000000000003" y="250" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">2. AWS Cloud VPC (Replicated Topology for QA &amp; PROD Environments — Multi-AZ High Availability)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="52" y="278" width="460" height="106" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 60 278 H 504 Q 512 278 512 286 V 308 H 52 V 286 Q 52 278 60 278 Z" fill="#17324D"/>
+<text x="64" y="298" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Load Balancer — AWS ALB / Nginx Reverse Proxy (HA)</text>
+<rect x="405.5" y="284" width="98.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="454.75" y="297" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Load Balancer</text>
+<text x="64" y="326" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Distributes HTTPS/WSS across AZ-a and AZ-b targets</text>
+<text x="64" y="342.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Active health checks (/actuator/health/readiness every 10s)</text>
+<text x="64" y="359.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Zero-downtime rolling deploys &amp; automatic unhealthy failover</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="566" y="278" width="490" height="106" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 574 278 H 1048 Q 1056 278 1056 286 V 308 H 566 V 286 Q 566 278 574 278 Z" fill="#20A69A"/>
+<text x="578" y="298" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">API Gateway — Spring Cloud Gateway (2+ Replicas HA)</text>
+<rect x="962.5" y="284" width="85.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1005.25" y="297" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">API Gateway</text>
+<text x="578" y="326" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Centralized routing: /api/v1/**, /ws/**, /graphql, /mcp/**</text>
+<text x="578" y="342.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Strict CORS allow-list, Redis-backed Rate Limiting &amp; Security Headers</text>
+<text x="578" y="359.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Keycloak JWT validation &amp; X-Correlation-ID injection (ODD)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1110" y="278" width="440" height="106" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1118 278 H 1542 Q 1550 278 1550 286 V 308 H 1110 V 286 Q 1110 278 1118 278 Z" fill="#0F766E"/>
+<text x="1122" y="298" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Frontend Static &amp; SSR Hosting (Multi-Replica)</text>
+<rect x="1456.5" y="284" width="85.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1499.25" y="297" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Frontend HA</text>
+<text x="1122" y="326" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Nginx / CloudFront: Shell + 4 MFE Remotes (remoteEntry.js)</text>
+<text x="1122" y="342.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Astro 5 Public Street-QR (/p/:code) fed by PaaS CMS</text>
+<text x="1122" y="359.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Next.js Optional Hybrid Container (SSG/ISR/SSR/CSR)</text>
+</g>
+<line x1="696" y1="200" x2="282" y2="278" stroke="#E67E22" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<rect x="391.3" y="221" width="117.4" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#E67E22" stroke-width="0.6"/>
+<text x="450" y="232" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#E67E22">HTTPS Origin Pull</text>
+<line x1="512" y1="331" x2="566" y2="331" stroke="#17324D" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="514.4" y="314.0" width="49.2" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#17324D" stroke-width="0.6"/>
+<text x="539.0" y="325.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#17324D">HTTP/2</text>
+<line x1="696" y1="200" x2="1330" y2="278" stroke="#0F766E" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="1013.0" y="221" width="74.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#0F766E" stroke-width="0.6"/>
+<text x="1050" y="232" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#0F766E">Static/SSR</text>
+<g>
+  <rect x="52" y="424" width="998" height="160" rx="10" fill="#FFFFFF" stroke="#20A69A" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="66" y="412" width="542.4" height="24" rx="5" fill="#20A69A"/>
+  <text x="337.2" y="428" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">High Availability Application Tier (Auto-Scaling / ECS — Min 2 Replicas)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="74" y="450" width="456" height="120" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 82 450 H 522 Q 530 450 530 458 V 480 H 74 V 458 Q 74 450 82 450 Z" fill="#17324D"/>
+<text x="86" y="470" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Availability Zone A — Spring Boot 3 Backend Replica #1</text>
+<rect x="436.5" y="456" width="85.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="479.25" y="469" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">AZ-a Active</text>
+<text x="86" y="498" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Hexagonal Core (Catalog, Scheduling, Billing, Identity)</text>
+<text x="86" y="514.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• REST + Stripe HMAC Webhook + STOMP WS + GraphQL + MCP</text>
+<text x="86" y="531.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Spring AI RAG Orchestrator + Outbox Relay (SKIP LOCKED)</text>
+<text x="86" y="547.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Sentry Java SDK + Structured JSON ODD Logs</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="566" y="450" width="462" height="120" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 574 450 H 1020 Q 1028 450 1028 458 V 480 H 566 V 458 Q 566 450 574 450 Z" fill="#17324D"/>
+<text x="578" y="470" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Availability Zone B — Spring Boot 3 Backend Replica #2</text>
+<rect x="934.5" y="456" width="85.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="977.25" y="469" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">AZ-b Active</text>
+<text x="578" y="498" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Identical Stateless Hexagonal Container (DockerHub image)</text>
+<text x="578" y="514.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Automatic Failover via AWS ALB if AZ-a fails healthcheck</text>
+<text x="578" y="531.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Shared concurrency safety via Redis Locks &amp; MySQL SKIP LOCKED</text>
+<text x="578" y="547.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Independent horizontal scale-out under k6 / PROD load</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1080" y="424" width="470" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1088 424 H 1542 Q 1550 424 1550 432 V 454 H 1080 V 432 Q 1080 424 1088 424 Z" fill="#475569"/>
+<text x="1092" y="444" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">IAM, Automation &amp; Object Storage Services</text>
+<rect x="1443.5" y="430" width="98.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1492.75" y="443" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Platform Svcs</text>
+<text x="1092" y="472" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Keycloak IAM Cluster: OIDC/PKCE + RBAC (espacio-realm)</text>
+<text x="1092" y="488.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">n8n Automation Worker: Emails, Reminders, Cascade Refunds</text>
+<text x="1092" y="505.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">AWS S3 Bucket: 2D ReferenceSketches &amp; Immutable PDF Invoices</text>
+<text x="1092" y="521.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">AWS Secrets Manager: Stripe keys, DB creds, Sentry DSN (0 hardcoded)</text>
+<text x="1092" y="538.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">PaaS Connector: Strapi / Contentful / Supabase (CMS &amp; Auth/Storage)</text>
+</g>
+<line x1="710" y1="384" x2="302" y2="450" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="420.6" y="391" width="98.8" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#20A69A" stroke-width="0.6"/>
+<text x="470" y="402" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#20A69A">LB Round-Robin</text>
+<line x1="860" y1="384" x2="797" y2="450" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="837.5" y="391" width="105.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#20A69A" stroke-width="0.6"/>
+<text x="890" y="402" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#20A69A">Failover Active</text>
+<g>
+  <rect x="52" y="614" width="1498" height="174" rx="10" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="66" y="602" width="693.6" height="24" rx="5" fill="#6D28D9"/>
+  <text x="412.8" y="618" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">3. Polyglot Persistence Tier — 4 Specialized Databases (Private Subnets — Zero Public Access)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="74" y="642" width="344" height="132" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 82 642 H 410 Q 418 642 418 650 V 672 H 74 V 650 Q 74 642 82 642 Z" fill="#17324D"/>
+<text x="86" y="662" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">DB #1: MySQL 8.4 (Relational ACID)</text>
+<rect x="346" y="648" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="378.0" y="661" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">RDBMS</text>
+<text x="86" y="690" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Primary + Multi-AZ Standby Replica</text>
+<text x="86" y="706.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Properties, TimeSlots, VisitRequests,</text>
+<text x="86" y="723.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Payments, Invoices, Refunds, Outbox</text>
+<text x="86" y="739.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Strong ACID + Flyway Migrations</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="442" y="642" width="344" height="132" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 450 642 H 778 Q 786 642 786 650 V 672 H 442 V 650 Q 442 642 450 642 Z" fill="#0F766E"/>
+<text x="454" y="662" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">DB #2: MongoDB (Document Store)</text>
+<rect x="712.0" y="648" width="66.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="745.0" y="661" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Document</text>
+<text x="454" y="690" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Replica Set (Primary + Secondaries)</text>
+<text x="454" y="706.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">property_spatial_sheets, space_fit_templates,</text>
+<text x="454" y="723.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">domain_audit_logs (immutable trail)</text>
+<text x="454" y="739.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Polymorphic JSON / BSON</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="810" y="642" width="344" height="132" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 818 642 H 1146 Q 1154 642 1154 650 V 672 H 810 V 650 Q 810 642 818 642 Z" fill="#C62828"/>
+<text x="822" y="662" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">DB #3: Redis (In-Memory Cache/Locks)</text>
+<rect x="1082" y="648" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1114.0" y="661" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Cache</text>
+<text x="822" y="690" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Primary + Failover Sentinel / Cluster</text>
+<text x="822" y="706.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">lock:timeslot:{id} (SET NX PX 600s)</text>
+<text x="822" y="723.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">token:checkin:{id} &amp; search cache</text>
+<text x="822" y="739.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Sub-ms Atomic Concurrency</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1178" y="642" width="350" height="132" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1186 642 H 1520 Q 1528 642 1528 650 V 672 H 1178 V 650 Q 1178 642 1186 642 Z" fill="#6D28D9"/>
+<text x="1190" y="662" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">DB #4: Vector DB (Qdrant / pgvector)</text>
+<rect x="1447.5" y="648" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1483.75" y="661" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Vector DB</text>
+<text x="1190" y="690" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">HNSW Cosine Index (1536-dim embeddings)</text>
+<text x="1190" y="706.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Property specs, trade rules &amp; escrow FAQs</text>
+<text x="1190" y="723.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Metadata pre-filtering (zone, doorWidth)</text>
+<text x="1190" y="739.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Grounded RAG &amp; MCP Retrieval</text>
+</g>
+<line x1="790" y1="584" x2="982" y2="642" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<line x1="920" y1="584" x2="1353" y2="642" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<line x1="246" y1="584" x2="246" y2="614" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<line x1="614" y1="584" x2="614" y2="614" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<g>
+  <rect x="26" y="836" width="1548" height="212" rx="10" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="824" width="693.6" height="24" rx="5" fill="#0F766E"/>
+  <text x="386.8" y="840" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">4. QA vs. PROD Environment Topology &amp; Promotion Gate (Practical Requirements #1–#26 + Opt #1)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="52" y="864" width="728" height="166" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 60 864 H 772 Q 780 864 780 872 V 894 H 52 V 872 Q 52 864 60 864 Z" fill="#20A69A"/>
+<text x="64" y="884" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">QA Environment (qa.espacio.app  |  Branch: qa  |  DockerHub: qa-latest)</text>
+<rect x="693.0" y="870" width="79.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="732.5" y="883" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">QA Staging</text>
+<text x="64" y="912" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Cloudflare Proxy + SSL Strict + QA WAF rules + Site24x7 1-min uptime monitor</text>
+<text x="64" y="928.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• AWS ALB + Spring Cloud Gateway + 2x Spring Boot Replicas (HA failover verified via k6)</text>
+<text x="64" y="945.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• All 4 DBs live (MySQL, MongoDB, Redis, Qdrant) + Keycloak QA realm + Stripe Test Mode</text>
+<text x="64" y="961.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• PaaS CMS (Strapi/Contentful QA workspace) + n8n QA workflows + Sentry project: espacio-qa</text>
+<text x="64" y="978.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Mandatory CI/CD Gate: Unit + Functional (Testcontainers) + E2E (Playwright) + Load (k6)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="816" y="864" width="734" height="166" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 824 864 H 1542 Q 1550 864 1550 872 V 894 H 816 V 872 Q 816 864 824 864 Z" fill="#17324D"/>
+<text x="828" y="884" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">PROD Environment (espacio.app  |  Branch: main  |  DockerHub: prod-vX.Y.Z)</text>
+<rect x="1469.5" y="870" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1505.75" y="883" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">PROD Live</text>
+<text x="828" y="912" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Cloudflare Proxy + SSL Strict + Strict OWASP WAF + Bot Protection + Site24x7 30s alerts</text>
+<text x="828" y="928.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• AWS Multi-AZ ALB + 2x API Gateway + Auto-Scaling Spring Boot Replicas (Zero-Downtime HA)</text>
+<text x="828" y="945.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Multi-AZ MySQL Primary/Standby + MongoDB Replica Set + Redis Failover + Qdrant Snapshots</text>
+<text x="828" y="961.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• PaaS CMS PROD + n8n PROD + Sentry project: espacio-prod (P1 alerts to Slack/Email)</text>
+<text x="828" y="978.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Promoted ONLY from verified QA release with Dual Approval Gate (Architect + QA/Tech Lead)</text>
+</g>
+<line x1="780" y1="947" x2="816" y2="947" stroke="#0F766E" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="770.3" y="930.0" width="55.4" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#0F766E" stroke-width="0.6"/>
+<text x="798.0" y="941.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#0F766E">PR Gate</text>
+  <text x="1576" y="1068" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="#64748B">ESPACIO Platform Architecture • Universidad Central del Ecuador (GPWP 2026–2027)</text>
+</svg>

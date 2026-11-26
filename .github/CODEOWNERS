@@ -1,0 +1,28 @@
+# ESPACIO Mono Repo Ownership Boundaries (GPWP-36 / ARCH-07)
+# Aligned with Weekly Rotating Student Roles (01. Project Governance)
+
+# Global Governance & Architecture Gate
+*                               @RodARWx @fslincango
+/docs/architecture/             @fslincango
+/packages/contracts/            @fslincango @siescuntar
+
+# Backend & API Gateway
+/apps/backend/                  @siescuntar @fslincango
+/apps/api-gateway/              @siescuntar @fslincango
+
+# Microfrontends, Multi-Platform Wrappers & Shared Frontend Packages
+/apps/shell/                    @JhostinMolina @fslincango
+/apps/mf-*/                     @JhostinMolina @fslincango
+/apps/public-qr/                @JhostinMolina
+/apps/web-ssr/                  @JhostinMolina
+/apps/mobile/                   @JhostinMolina
+/apps/desktop/                  @JhostinMolina
+/packages/ui/                   @JhostinMolina
+/packages/auth-store/           @JhostinMolina @fslincango
+/packages/api-client/           @JhostinMolina @siescuntar
+/packages/domain-utils/         @fslincango @JhostinMolina
+/packages/wasm-spatial/         @JhostinMolina @fslincango
+
+# Infrastructure, CI/CD, Edge Security & Observability
+/infra/                         @IoshuaRosero @fslincango
+/.github/                       @IoshuaRosero @RodARWx @fslincango
