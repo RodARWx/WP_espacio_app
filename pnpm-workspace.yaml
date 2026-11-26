@@ -1,0 +1,12 @@
+packages:
+  - "apps/shell"
+  - "apps/mf-*"
+  - "apps/public-qr"
+  - "apps/web-ssr"
+  - "apps/mobile"
+  - "apps/desktop"
+  - "packages/ui"
+  - "packages/auth-store"
+  - "packages/api-client"
+  - "packages/domain-utils"
+  - "packages/wasm-spatial"

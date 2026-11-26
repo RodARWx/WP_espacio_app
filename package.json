@@ -1,0 +1,25 @@
+{
+  "name": "espacio-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ESPACIO Multi-Platform Spatial Evaluation & Verified Visit Scheduling Platform Mono Repo",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "codegen:api": "pnpm --filter @espacio/api-client run codegen",
+    "wasm:build": "pnpm --filter @espacio/wasm-spatial run build:wasm",
+    "backend:test": "mvn -f apps/backend/pom.xml test",
+    "gateway:test": "mvn -f apps/api-gateway/pom.xml test",
+    "infra:up": "docker compose -f infra/docker/docker-compose.local.yml up -d",
+    "infra:down": "docker compose -f infra/docker/docker-compose.local.yml down"
+  }
+}

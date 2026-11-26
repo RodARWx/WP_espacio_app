@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="900" viewBox="0 0 1520 900">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#17324D" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#20A69A"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#E67E22"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6D28D9"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#C62828"/>
+    </marker>
+  </defs>
+  <rect width="1520" height="900" fill="#F5F7FA"/>
+  <!-- Top Header Banner -->
+  <rect x="0" y="0" width="1520" height="74" fill="#17324D"/>
+  <rect x="0" y="74" width="1520" height="4" fill="#20A69A"/>
+  <text x="28" y="34" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">C4 Level 1: ESPACIO System Context Diagram (v2.0 — Updated with Edge, HA &amp; Observability)</text>
+  <text x="28" y="57" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" fill="#CBD5E1">External actors, Cloudflare perimeter, AWS High-Availability boundary, PaaS CMS, Stripe, Keycloak, AI/RAG, n8n, Sentry.io &amp; Site24x7</text>
+  <rect x="1285" y="20" width="207" height="32" rx="16" fill="#20A69A"/>
+  <text x="1389" y="41" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">GPWP-38 • ARCH-09</text>
+  <g>
+  <rect x="26" y="108" width="290" height="540" rx="10" fill="#EDF2F7" stroke="#17324D" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="96" width="168.0" height="24" rx="5" fill="#17324D"/>
+  <text x="124.0" y="112" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">Primary Human Actors</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="140" width="246" height="140" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 140 H 286 Q 294 140 294 148 V 170 H 48 V 148 Q 48 140 56 140 Z" fill="#20A69A"/>
+<text x="60" y="160" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Tenant (ROLE_TENANT)</text>
+<rect x="222" y="146" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="254.0" y="159" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">User</text>
+<text x="60" y="188" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Searches by room/door dims</text>
+<text x="60" y="204.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Runs Space-Fit Evaluator &amp; RAG</text>
+<text x="60" y="221.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Pays Stripe AttendanceDeposit</text>
+<text x="60" y="237.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Shows dynamic QR check-in pass</text>
+<text x="60" y="254.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Web / Mobile / Desktop / QR</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="304" width="246" height="140" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 304 H 286 Q 294 304 294 312 V 334 H 48 V 312 Q 48 304 56 304 Z" fill="#0F766E"/>
+<text x="60" y="324" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Landlord (ROLE_LANDLORD)</text>
+<rect x="222" y="310" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="254.0" y="323" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">User</text>
+<text x="60" y="352" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Publishes Property specs (INV-01)</text>
+<text x="60" y="368.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Uploads 2D Sketch (Wasm)</text>
+<text x="60" y="385.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Manages TimeSlot calendar</text>
+<text x="60" y="401.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Scans Tenant QR on-site</text>
+<text x="60" y="418.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Web / Mobile / Desktop</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="468" width="246" height="140" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 468 H 286 Q 294 468 294 476 V 498 H 48 V 476 Q 48 468 56 468 Z" fill="#475569"/>
+<text x="60" y="488" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Admin (ROLE_ADMIN)</text>
+<rect x="222" y="474" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="254.0" y="487" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Admin</text>
+<text x="60" y="516" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Audits RBAC role matrix</text>
+<text x="60" y="532.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Reviews Stripe Escrow Ledger</text>
+<text x="60" y="549.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Monitors Sentry &amp; Site24x7</text>
+<text x="60" y="565.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Platform health governance</text>
+<text x="60" y="582.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">mf-admin Protected Portal</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="376" y="250" width="224" height="246" rx="8" fill="#FFF7ED" stroke="#E67E22" stroke-width="1.5"/>
+<path d="M 384 250 H 592 Q 600 250 600 258 V 280 H 376 V 258 Q 376 250 384 250 Z" fill="#E67E22"/>
+<text x="388" y="270" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Cloudflare Edge</text>
+<rect x="526.0" y="256" width="66.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="559.0" y="269" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Edge WAF</text>
+<text x="388" y="298" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">QA &amp; PROD Perimeter</text>
+<text x="388" y="314.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Authoritative DNS Proxy</text>
+<text x="388" y="331.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• SSL/TLS Full (Strict)</text>
+<text x="388" y="347.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• OWASP Managed WAF</text>
+<text x="388" y="364.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• DDoS &amp; Bot Mitigation</text>
+<text x="388" y="380.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Edge Rate Limiting</text>
+<text x="388" y="397.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Static CDN Caching</text>
+<text x="388" y="413.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">qa.espacio.app</text>
+<text x="388" y="430.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">espacio.app</text>
+</g>
+<g>
+  <rect x="662" y="134" width="412" height="488" rx="10" fill="#EBF8FF" stroke="#17324D" stroke-width="1.6"/>
+  <rect x="676" y="122" width="398.40000000000003" height="24" rx="5" fill="#17324D"/>
+  <text x="875.2" y="138" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">ESPACIO Platform (AWS QA &amp; PROD — High Availability)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="686" y="170" width="364" height="112" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 694 170 H 1042 Q 1050 170 1050 178 V 200 H 686 V 178 Q 686 170 694 170 Z" fill="#17324D"/>
+<text x="698" y="190" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Load Balancer + API Gateway</text>
+<rect x="978" y="176" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1010.0" y="189" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Ingress</text>
+<text x="698" y="218" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">AWS ALB / Nginx Multi-AZ Load Balancer</text>
+<text x="698" y="234.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Spring Cloud Gateway: Strict CORS, Rate Limit,</text>
+<text x="698" y="251.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">JWT Relay, Security Headers, Correlation IDs</text>
+<text x="698" y="267.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Zero direct public access to backend pods</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="686" y="302" width="364" height="146" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 694 302 H 1042 Q 1050 302 1050 310 V 332 H 686 V 310 Q 686 302 694 302 Z" fill="#20A69A"/>
+<text x="698" y="322" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">ESPACIO Core Platform (Multi-Replica HA)</text>
+<rect x="978" y="308" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1010.0" y="321" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Core HA</text>
+<text x="698" y="350" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Microfrontends Shell + 4 Remotes + Wasm</text>
+<text x="698" y="366.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Astro Jamstack Street-QR + Optional Next.js</text>
+<text x="698" y="383.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Spring Boot 3 Hexagonal API (2+ Replicas)</text>
+<text x="698" y="399.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Polyglot 4 DBs: MySQL, Mongo, Redis, Vector DB</text>
+<text x="698" y="416.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• REST, Webhooks, WebSockets, GraphQL &amp; MCP</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="686" y="468" width="364" height="128" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 694 468 H 1042 Q 1050 468 1050 476 V 498 H 686 V 476 Q 686 468 694 468 Z" fill="#0F766E"/>
+<text x="698" y="488" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Dual Environment Parity (QA &amp; PROD)</text>
+<rect x="969.5" y="474" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1005.75" y="487" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">QA + PROD</text>
+<text x="698" y="516" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">QA Environment: qa.espacio.app (Sandbox + E2E/k6)</text>
+<text x="698" y="532.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">PROD Environment: espacio.app (Multi-AZ HA)</text>
+<text x="698" y="549.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Isolated DBs, Keycloak realms, Sentry projects,</text>
+<text x="698" y="565.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">and Site24x7 monitors per environment.</text>
+</g>
+<g>
+  <rect x="1136" y="108" width="358" height="740" rx="10" fill="#F8FAFC" stroke="#475569" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="1150" y="96" width="297.6" height="24" rx="5" fill="#475569"/>
+  <text x="1298.8" y="112" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">External Systems, PaaS &amp; Observability</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1158" y="136" width="314" height="96" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1166 136 H 1464 Q 1472 136 1472 144 V 166 H 1158 V 144 Q 1158 136 1166 136 Z" fill="#17324D"/>
+<text x="1170" y="156" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Keycloak IAM (OAuth2 / OIDC + PKCE)</text>
+<rect x="1400" y="142" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1432.0" y="155" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">IAM</text>
+<text x="1170" y="184" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Issues RS256 JWTs with realm_access.roles</text>
+<text x="1170" y="200.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Clients: web, mobile, desktop (S256 PKCE)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1158" y="246" width="314" height="96" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1166 246 H 1464 Q 1472 246 1472 254 V 276 H 1158 V 254 Q 1158 246 1166 246 Z" fill="#E67E22"/>
+<text x="1170" y="266" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Stripe Payment Gateway</text>
+<rect x="1398.0" y="252" width="66.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1431.0" y="265" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Payments</text>
+<text x="1170" y="294" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">AttendanceDeposit PaymentIntents, Refunds</text>
+<text x="1170" y="310.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Signed HMAC-SHA256 Webhooks &amp; Invoices</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1158" y="356" width="314" height="96" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1166 356 H 1464 Q 1472 356 1472 364 V 386 H 1158 V 364 Q 1158 356 1166 356 Z" fill="#20A69A"/>
+<text x="1170" y="376" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">PaaS &amp; Headless CMS</text>
+<rect x="1400" y="362" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1432.0" y="375" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">PaaS</text>
+<text x="1170" y="404" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Strapi / Contentful / Supabase (QA &amp; PROD)</text>
+<text x="1170" y="420.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Editorial content &amp; webhook Astro rebuilds</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1158" y="466" width="314" height="96" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1166 466 H 1464 Q 1472 466 1472 474 V 496 H 1158 V 474 Q 1158 466 1166 466 Z" fill="#6D28D9"/>
+<text x="1170" y="486" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">AI LLM / VLM &amp; Runtime MCP</text>
+<rect x="1398.0" y="472" width="66.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1431.0" y="485" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">AI / RAG</text>
+<text x="1170" y="514" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">OpenAI / Ollama Embeddings &amp; GPT-4o Vision</text>
+<text x="1170" y="530.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Grounded RAG + Read-only MCP Tool Server</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1158" y="576" width="314" height="96" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1166 576 H 1464 Q 1472 576 1472 584 V 606 H 1158 V 584 Q 1158 576 1166 576 Z" fill="#0F766E"/>
+<text x="1170" y="596" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">n8n Workflow Automation</text>
+<rect x="1385.0" y="582" width="79.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1424.5" y="595" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Automation</text>
+<text x="1170" y="624" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Async emails, 24h reminders, cascade notices</text>
+<text x="1170" y="640.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Triggered from MySQL Transactional Outbox</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1158" y="686" width="314" height="140" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1166 686 H 1464 Q 1472 686 1472 694 V 716 H 1158 V 694 Q 1158 686 1166 686 Z" fill="#C62828"/>
+<text x="1170" y="706" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Sentry.io &amp; Site24x7 (ODD)</text>
+<rect x="1385.0" y="692" width="79.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1424.5" y="705" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Monitoring</text>
+<text x="1170" y="734" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Sentry.io: FE + BE errors, traces &amp; releases</text>
+<text x="1170" y="750.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Site24x7: QA/PROD uptime, SSL &amp; latency alerts</text>
+<text x="1170" y="767.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Automated Slack/Email alerts on SLA breach</text>
+<text x="1170" y="783.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Continuous Synthetic Probes</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="26" y="690" width="1048" height="158" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 34 690 H 1066 Q 1074 690 1074 698 V 720 H 26 V 698 Q 26 690 34 690 Z" fill="#17324D"/>
+<text x="38" y="710" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">C4 Level 1 Architectural Delta Summary (GPWP-38 / ARCH-09)</text>
+<rect x="987.0" y="696" width="79.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1026.5" y="709" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">v2.0 Delta</text>
+<text x="38" y="738" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">1. Edge Protection (Cloudflare): All public traffic for QA &amp; PROD terminates at Cloudflare WAF/DNS before reaching AWS ALB.</text>
+<text x="38" y="754.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">2. Ingress Governance (ALB + API Gateway): Load Balancer distributes across HA replicas; Spring Cloud Gateway enforces CORS &amp; rate limits.</text>
+<text x="38" y="771.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">3. PaaS &amp; AI Ecosystem: Explicitly incorporates Headless CMS PaaS (Strapi/Contentful/Supabase) and LLM/VLM + Vector DB RAG.</text>
+<text x="38" y="787.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">4. Observability-Driven Operations: Sentry.io captures frontend/backend traces &amp; errors; Site24x7 monitors QA &amp; PROD availability 24/7.</text>
+<text x="38" y="804.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">5. RBAC Expansion: Supports ROLE_TENANT, ROLE_LANDLORD, and ROLE_ADMIN with zero direct backend exposure.</text>
+</g>
+<line x1="294" y1="210" x2="376" y2="330" stroke="#17324D" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="313.5" y="253.0" width="43.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#17324D" stroke-width="0.6"/>
+<text x="335.0" y="264.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#17324D">HTTPS</text>
+<line x1="294" y1="374" x2="376" y2="374" stroke="#17324D" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="294.9" y="357.0" width="80.2" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#17324D" stroke-width="0.6"/>
+<text x="335.0" y="368.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#17324D">HTTPS / WSS</text>
+<line x1="294" y1="538" x2="376" y2="420" stroke="#17324D" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="313.5" y="462.0" width="43.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#17324D" stroke-width="0.6"/>
+<text x="335.0" y="473.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#17324D">HTTPS</text>
+<line x1="600" y1="374" x2="662" y2="374" stroke="#E67E22" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<rect x="603.3" y="357.0" width="55.4" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#E67E22" stroke-width="0.6"/>
+<text x="631.0" y="368.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#E67E22">TLS 1.3</text>
+<line x1="1074" y1="215" x2="1158" y2="184" stroke="#17324D" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1082.1" y="182.5" width="67.80000000000001" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#17324D" stroke-width="0.6"/>
+<text x="1116.0" y="193.5" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#17324D">OIDC/JWKS</text>
+<line x1="1074" y1="290" x2="1158" y2="290" stroke="#E67E22" stroke-width="2" marker-end="url(#arrow-orange)"/>
+<rect x="1082.1" y="273.0" width="67.80000000000001" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#E67E22" stroke-width="0.6"/>
+<text x="1116.0" y="284.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#E67E22">REST/HMAC</text>
+<line x1="1074" y1="370" x2="1158" y2="404" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="1088.3" y="370.0" width="55.4" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#20A69A" stroke-width="0.6"/>
+<text x="1116.0" y="381.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#20A69A">CMS API</text>
+<line x1="1074" y1="445" x2="1158" y2="514" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="1088.3" y="462.5" width="55.4" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#6D28D9" stroke-width="0.6"/>
+<text x="1116.0" y="473.5" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#6D28D9">RAG/MCP</text>
+<line x1="1074" y1="520" x2="1158" y2="624" stroke="#0F766E" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="1072.8" y="555.0" width="86.4" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#0F766E" stroke-width="0.6"/>
+<text x="1116.0" y="566.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#0F766E">Outbox Hooks</text>
+<line x1="1074" y1="580" x2="1158" y2="740" stroke="#C62828" stroke-width="2" marker-end="url(#arrow-red)"/>
+<rect x="1069.7" y="643.0" width="92.60000000000001" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#C62828" stroke-width="0.6"/>
+<text x="1116.0" y="654.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#C62828">Errors/Probes</text>
+  <text x="1496" y="888" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="#64748B">ESPACIO Platform Architecture • Universidad Central del Ecuador (GPWP 2026–2027)</text>
+</svg>

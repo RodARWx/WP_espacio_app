@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="940" viewBox="0 0 1520 940">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#17324D" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#20A69A"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#E67E22"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6D28D9"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#C62828"/>
+    </marker>
+  </defs>
+  <rect width="1520" height="940" fill="#F5F7FA"/>
+  <!-- Top Header Banner -->
+  <rect x="0" y="0" width="1520" height="74" fill="#17324D"/>
+  <rect x="0" y="74" width="1520" height="4" fill="#20A69A"/>
+  <text x="28" y="34" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">ESPACIO Mono Repo Architecture &amp; Workspace Dependency Graph</text>
+  <text x="28" y="57" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" fill="#CBD5E1">Unified workspace structure (apps/, packages/, infra/, docs/) with acyclic dependencies and strict role ownership boundaries</text>
+  <rect x="1285" y="20" width="207" height="32" rx="16" fill="#20A69A"/>
+  <text x="1389" y="41" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">GPWP-36 • ARCH-07</text>
+  <g>
+  <rect x="26" y="102" width="1468" height="300" rx="10" fill="#EDF2F7" stroke="#17324D" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="90" width="376.8" height="24" rx="5" fill="#17324D"/>
+  <text x="228.4" y="106" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">apps/ — Deployable Applications &amp; Platform Shells</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="128" width="250" height="118" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 128 H 290 Q 298 128 298 136 V 158 H 48 V 136 Q 48 128 56 128 Z" fill="#17324D"/>
+<text x="60" y="148" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">apps/api-gateway</text>
+<rect x="226" y="134" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="258.0" y="147" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Java 21</text>
+<text x="60" y="176" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Spring Cloud Gateway (Java 21)</text>
+<text x="60" y="192.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">CORS, Rate Limiting, JWT Relay</text>
+<text x="60" y="209.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Security Headers, X-Correlation-ID</text>
+<text x="60" y="225.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Backend / DevOps</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="316" y="128" width="310" height="118" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 324 128 H 618 Q 626 128 626 136 V 158 H 316 V 136 Q 316 128 324 128 Z" fill="#17324D"/>
+<text x="328" y="148" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">apps/backend</text>
+<rect x="545.5" y="134" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="581.75" y="147" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Hexagonal</text>
+<text x="328" y="176" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Spring Boot 3 Hexagonal API</text>
+<text x="328" y="192.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">4 Bounded Contexts (INV-01..05)</text>
+<text x="328" y="209.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">REST, Webhooks, WS, GraphQL, RAG, MCP</text>
+<text x="328" y="225.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Backend (Sebastian)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="644" y="128" width="260" height="118" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 652 128 H 896 Q 904 128 904 136 V 158 H 644 V 136 Q 644 128 652 128 Z" fill="#20A69A"/>
+<text x="656" y="148" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">apps/shell (MFE Host)</text>
+<rect x="832" y="134" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="864.0" y="147" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Host</text>
+<text x="656" y="176" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">React 19 + Vite + MF Host</text>
+<text x="656" y="192.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Routing, Layout, Keycloak PKCE</text>
+<text x="656" y="209.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Sentry ErrorBoundary per Remote</text>
+<text x="656" y="225.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Frontend (Jhostin)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="922" y="128" width="276" height="118" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 930 128 H 1190 Q 1198 128 1198 136 V 158 H 922 V 136 Q 922 128 930 128 Z" fill="#20A69A"/>
+<text x="934" y="148" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">apps/mf-* (4 Remotes)</text>
+<rect x="1126" y="134" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1158.0" y="147" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Remotes</text>
+<text x="934" y="176" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">mf-catalog | mf-booking</text>
+<text x="934" y="192.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">mf-host    | mf-admin</text>
+<text x="934" y="209.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Independent Module Federation builds</text>
+<text x="934" y="225.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Frontend (Jhostin)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1216" y="128" width="258" height="118" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1224 128 H 1466 Q 1474 128 1474 136 V 158 H 1216 V 136 Q 1216 128 1224 128 Z" fill="#E67E22"/>
+<text x="1228" y="148" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">apps/public-qr &amp; web-ssr</text>
+<rect x="1400.0" y="134" width="66.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1433.0" y="147" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Edge/SEO</text>
+<text x="1228" y="176" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">public-qr: Astro 5 + Headless CMS</text>
+<text x="1228" y="192.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Street-QR /p/:code (0 KB JS)</text>
+<text x="1228" y="209.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">web-ssr: Next.js Optional (SSG/ISR)</text>
+<text x="1228" y="225.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Frontend (Jhostin)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="644" y="266" width="260" height="116" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 652 266 H 896 Q 904 266 904 274 V 296 H 644 V 274 Q 644 266 652 266 Z" fill="#0F766E"/>
+<text x="656" y="286" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">apps/mobile (Capacitor 6)</text>
+<rect x="832" y="272" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="864.0" y="285" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Mobile</text>
+<text x="656" y="314" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">iOS &amp; Android Native Wrapper</text>
+<text x="656" y="330.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Wraps apps/shell dist bundle</text>
+<text x="656" y="347.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">MLKit Native QR + Deep-Link PKCE</text>
+<text x="656" y="363.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Frontend (Jhostin)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="922" y="266" width="276" height="116" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 930 266 H 1190 Q 1198 266 1198 274 V 296 H 922 V 274 Q 922 266 930 266 Z" fill="#0F766E"/>
+<text x="934" y="286" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">apps/desktop (Electron 33)</text>
+<rect x="1126" y="272" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1158.0" y="285" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Desktop</text>
+<text x="934" y="314" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Windows / macOS / Linux Wrapper</text>
+<text x="934" y="330.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Wraps apps/shell dist bundle</text>
+<text x="934" y="347.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">OS safeStorage + Native PDF Print</text>
+<text x="934" y="363.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Frontend (Jhostin)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="266" width="578" height="116" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 266 H 618 Q 626 266 626 274 V 296 H 48 V 274 Q 48 266 56 266 Z" fill="#334155"/>
+<text x="60" y="286" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Workspace Orchestration &amp; Tooling (Root)</text>
+<rect x="554" y="272" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="586.0" y="285" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Root</text>
+<text x="60" y="314" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">pnpm-workspace.yaml + turbo.json (Frontend/Wasm build &amp; cache graph)</text>
+<text x="60" y="330.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Maven multi-module / isolated POMs (apps/api-gateway + apps/backend)</text>
+<text x="60" y="347.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">GitFlow: main &lt;- qa &lt;- develop &lt;- feature/*  |  Dual PR Gate (.github/CODEOWNERS)</text>
+<text x="60" y="363.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Root scripts: pnpm dev | build | lint | test | test:e2e | codegen:api | wasm:build</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1216" y="266" width="258" height="116" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1224 266 H 1466 Q 1474 266 1474 274 V 296 H 1216 V 274 Q 1216 266 1224 266 Z" fill="#475569"/>
+<text x="1228" y="286" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">docs/architecture/</text>
+<rect x="1402" y="272" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1434.0" y="285" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Docs</text>
+<text x="1228" y="314" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">diagrams/ (SVG + HiDPI PNG)</text>
+<text x="1228" y="330.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">adr/ (ADR-001 through ADR-017)</text>
+<text x="1228" y="347.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Synced with Confluence GPWP</text>
+<text x="1228" y="363.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Architecture (Santiago)</text>
+</g>
+<g>
+  <rect x="26" y="444" width="1468" height="210" rx="10" fill="#F0FDFA" stroke="#20A69A" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="432" width="564.0" height="24" rx="5" fill="#20A69A"/>
+  <text x="322.0" y="448" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">packages/ — Shared Internal Libraries &amp; Spec-Driven Contracts (Acyclic DAG)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="474" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 474 H 264 Q 272 474 272 482 V 504 H 48 V 482 Q 48 474 56 474 Z" fill="#17324D"/>
+<text x="60" y="494" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">packages/contracts</text>
+<rect x="200" y="480" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="232.0" y="493" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">SDD</text>
+<text x="60" y="522" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">SDD Source of Truth</text>
+<text x="60" y="538.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">openapi/ (OpenAPI 3.0.3)</text>
+<text x="60" y="555.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">graphql/ (Read SDL)</text>
+<text x="60" y="571.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">events/ (Outbox Schemas)</text>
+<text x="60" y="588.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">mcp/ (Read-Only Tools)</text>
+<text x="60" y="604.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Arch + Backend</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="290" y="474" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 298 474 H 506 Q 514 474 514 482 V 504 H 290 V 482 Q 290 474 298 474 Z" fill="#20A69A"/>
+<text x="302" y="494" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">packages/api-client</text>
+<rect x="433.5" y="480" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="469.75" y="493" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Generated</text>
+<text x="302" y="522" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">@espacio/api-client</text>
+<text x="302" y="538.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">openapi-typescript DTOs</text>
+<text x="302" y="555.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Typed openapi-fetch</text>
+<text x="302" y="571.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">TanStack Query Hooks</text>
+<text x="302" y="588.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Zero manual drift</text>
+<text x="302" y="604.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: FE + Backend</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="532" y="474" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 540 474 H 748 Q 756 474 756 482 V 504 H 532 V 482 Q 532 474 540 474 Z" fill="#20A69A"/>
+<text x="544" y="494" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">packages/auth-store</text>
+<rect x="675.5" y="480" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="711.75" y="493" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Singleton</text>
+<text x="544" y="522" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">@espacio/auth-store</text>
+<text x="544" y="538.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">MF Singleton Store</text>
+<text x="544" y="555.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Keycloak OIDC PKCE</text>
+<text x="544" y="571.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">RBAC role selectors</text>
+<text x="544" y="588.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Web/Mob/Desk Adapters</text>
+<text x="544" y="604.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: FE + Arch</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="774" y="474" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 782 474 H 990 Q 998 474 998 482 V 504 H 774 V 482 Q 774 474 782 474 Z" fill="#20A69A"/>
+<text x="786" y="494" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">packages/ui</text>
+<rect x="917.5" y="480" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="953.75" y="493" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Singleton</text>
+<text x="786" y="522" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">@espacio/ui</text>
+<text x="786" y="538.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Figma Design Tokens</text>
+<text x="786" y="555.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">TailwindCSS Theme</text>
+<text x="786" y="571.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">PropertyCard, QrPassModal</text>
+<text x="786" y="588.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">SpaceFitBadge, Invoice</text>
+<text x="786" y="604.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: UI/UX + FE</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1016" y="474" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1024 474 H 1232 Q 1240 474 1240 482 V 504 H 1016 V 482 Q 1016 474 1024 474 Z" fill="#0F766E"/>
+<text x="1028" y="494" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">packages/domain-utils</text>
+<rect x="1168" y="480" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1200.0" y="493" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Pure TS</text>
+<text x="1028" y="522" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">@espacio/domain-utils</text>
+<text x="1028" y="538.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Pure TypeScript (0 deps)</text>
+<text x="1028" y="555.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">INV-02 Space-Fit Math</text>
+<text x="1028" y="571.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">QR Payload Parsers</text>
+<text x="1028" y="588.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Unit &amp; Currency Format</text>
+<text x="1028" y="604.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: Arch + FE</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1258" y="474" width="216" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1266 474 H 1466 Q 1474 474 1474 482 V 504 H 1258 V 482 Q 1258 474 1266 474 Z" fill="#6D28D9"/>
+<text x="1270" y="494" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">packages/wasm-spatial</text>
+<rect x="1402" y="480" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1434.0" y="493" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">.wasm</text>
+<text x="1270" y="522" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">@espacio/wasm-spatial</text>
+<text x="1270" y="538.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Rust + wasm-pack</text>
+<text x="1270" y="555.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">2D Sketch Compression</text>
+<text x="1270" y="571.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Offline QR Verification</text>
+<text x="1270" y="588.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Lazy-loaded &lt; 80KB gz</text>
+<text x="1270" y="604.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: FE + Arch</text>
+</g>
+<g>
+  <rect x="26" y="694" width="1468" height="212" rx="10" fill="#FFF7ED" stroke="#E67E22" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="682" width="621.6" height="24" rx="5" fill="#E67E22"/>
+  <text x="350.8" y="698" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">infra/ &amp; .github/ — Infrastructure, Cloud (QA &amp; PROD), Security &amp; ODD Observability</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="724" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 724 H 264 Q 272 724 272 732 V 754 H 48 V 732 Q 48 724 56 724 Z" fill="#C2410C"/>
+<text x="60" y="744" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">infra/docker</text>
+<rect x="191.5" y="730" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="227.75" y="743" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">DockerHub</text>
+<text x="60" y="772" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Containers &amp; Registry</text>
+<text x="60" y="788.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Multi-stage Dockerfiles</text>
+<text x="60" y="805.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Compose (local/QA/PROD)</text>
+<text x="60" y="821.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">MySQL, Mongo, Redis,</text>
+<text x="60" y="838.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Qdrant, Keycloak, n8n</text>
+<text x="60" y="854.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: DevOps (Ioshua)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="290" y="724" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 298 724 H 506 Q 514 724 514 732 V 754 H 290 V 732 Q 290 724 298 724 Z" fill="#C2410C"/>
+<text x="302" y="744" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">infra/aws</text>
+<rect x="442" y="730" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="474.0" y="743" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">AWS HA</text>
+<text x="302" y="772" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">AWS Cloud &amp; HA</text>
+<text x="302" y="788.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">ALB / Nginx LB</text>
+<text x="302" y="805.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Multi-AZ Replicas (HA)</text>
+<text x="302" y="821.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">S3 Sketches &amp; Invoices</text>
+<text x="302" y="838.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Secrets Manager</text>
+<text x="302" y="854.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: DevOps (Ioshua)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="532" y="724" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 540 724 H 748 Q 756 724 756 732 V 754 H 532 V 732 Q 532 724 540 724 Z" fill="#C2410C"/>
+<text x="544" y="744" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">infra/cloudflare</text>
+<rect x="684" y="730" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="716.0" y="743" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">WAF/DNS</text>
+<text x="544" y="772" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Edge Security</text>
+<text x="544" y="788.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">QA &amp; PROD DNS Zones</text>
+<text x="544" y="805.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">SSL/TLS Full (Strict)</text>
+<text x="544" y="821.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">OWASP Managed WAF</text>
+<text x="544" y="838.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Edge Rate Limiting</text>
+<text x="544" y="854.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: DevOps (Ioshua)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="774" y="724" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 782 724 H 990 Q 998 724 998 732 V 754 H 774 V 732 Q 774 724 782 724 Z" fill="#17324D"/>
+<text x="786" y="744" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">infra/keycloak</text>
+<rect x="926" y="730" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="958.0" y="743" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">OIDC</text>
+<text x="786" y="772" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">IAM Configuration</text>
+<text x="786" y="788.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">espacio-realm.json</text>
+<text x="786" y="805.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">3 Public PKCE Clients</text>
+<text x="786" y="821.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">ROLE_TENANT / LANDLORD</text>
+<text x="786" y="838.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">ROLE_ADMIN Policies</text>
+<text x="786" y="854.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: BE + DevOps</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1016" y="724" width="224" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1024 724 H 1232 Q 1240 724 1240 732 V 754 H 1016 V 732 Q 1016 724 1024 724 Z" fill="#475569"/>
+<text x="1028" y="744" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">infra/n8n</text>
+<rect x="1168" y="730" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1200.0" y="743" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">n8n</text>
+<text x="1028" y="772" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Workflow Automation</text>
+<text x="1028" y="788.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Visit Confirmation Flow</text>
+<text x="1028" y="805.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">24h Reminder Triggers</text>
+<text x="1028" y="821.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">PropertyClosed Refunds</text>
+<text x="1028" y="838.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Outbox Webhook Hooks</text>
+<text x="1028" y="854.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: DevOps + BE</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1258" y="724" width="216" height="160" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1266 724 H 1466 Q 1474 724 1474 732 V 754 H 1258 V 732 Q 1258 724 1266 724 Z" fill="#6D28D9"/>
+<text x="1270" y="744" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">infra/observability</text>
+<rect x="1402" y="730" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1434.0" y="743" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">ODD</text>
+<text x="1270" y="772" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">ODD &amp; CI/CD Gates</text>
+<text x="1270" y="788.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Sentry.io (QA &amp; PROD)</text>
+<text x="1270" y="805.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Site24x7 Monitors</text>
+<text x="1270" y="821.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">k6 Load Test Scripts</text>
+<text x="1270" y="838.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">.github/workflows CI</text>
+<text x="1270" y="854.5" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Owner: DevOps + BE</text>
+</g>
+<line x1="160" y1="402" x2="160" y2="474" stroke="#17324D" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="126.1" y="411" width="67.80000000000001" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#17324D" stroke-width="0.6"/>
+<text x="160" y="422" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#17324D">SDD Specs</text>
+<line x1="272" y1="554" x2="290" y2="554" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<line x1="774" y1="246" x2="774" y2="266" stroke="#0F766E" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="796.5" y="247" width="43.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#0F766E" stroke-width="0.6"/>
+<text x="818" y="258" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#0F766E">Wraps</text>
+<line x1="1060" y1="246" x2="1060" y2="266" stroke="#0F766E" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="1082.5" y="247" width="43.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#0F766E" stroke-width="0.6"/>
+<text x="1104" y="258" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#0F766E">Wraps</text>
+<line x1="644" y1="402" x2="644" y2="474" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="607.0" y="411" width="74.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#20A69A" stroke-width="0.6"/>
+<text x="644" y="422" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#20A69A">Singletons</text>
+<line x1="886" y1="402" x2="886" y2="474" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="852.1" y="411" width="67.80000000000001" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#20A69A" stroke-width="0.6"/>
+<text x="886" y="422" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#20A69A">UI Tokens</text>
+<line x1="1128" y1="402" x2="1128" y2="474" stroke="#0F766E" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="1084.8" y="411" width="86.4" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#0F766E" stroke-width="0.6"/>
+<text x="1128" y="422" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#0F766E">Domain Utils</text>
+<line x1="1366" y1="402" x2="1366" y2="474" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="1329.0" y="411" width="74.0" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#6D28D9" stroke-width="0.6"/>
+<text x="1366" y="422" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#6D28D9">Lazy .wasm</text>
+  <text x="1496" y="928" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="#64748B">ESPACIO Platform Architecture • Universidad Central del Ecuador (GPWP 2026–2027)</text>
+</svg>

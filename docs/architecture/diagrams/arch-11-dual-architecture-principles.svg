@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="930" viewBox="0 0 1560 930">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#17324D" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#20A69A"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#E67E22"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#6D28D9"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#C62828"/>
+    </marker>
+  </defs>
+  <rect width="1560" height="930" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="1560" height="74" fill="#17324D"/>
+  <rect x="0" y="74" width="1560" height="4" fill="#20A69A"/>
+  <text x="28" y="34" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">ESPACIO Dual Architecture &amp; Design Principles Mapping</text>
+  <text x="28" y="57" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="13" fill="#CBD5E1">Backend Hexagonal Architecture (Spring Boot 3) + Frontend/Mobile MVVM (React MFEs) enforcing SOLID, DRY, KISS, Low Coupling/High Cohesion &amp; GRASP</text>
+  <rect x="1325" y="20" width="207" height="32" rx="16" fill="#20A69A"/>
+  <text x="1429" y="41" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">GPWP-40 • ARCH-11</text>
+  <g>
+  <rect x="26" y="102" width="740" height="520" rx="10" fill="#EDF2F7" stroke="#17324D" stroke-width="1.6"/>
+  <rect x="40" y="90" width="549.6" height="24" rx="5" fill="#17324D"/>
+  <text x="314.8" y="106" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">Architecture #1 — Backend Hexagonal Architecture (Ports &amp; Adapters + DDD)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="50" y="132" width="326" height="118" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 58 132 H 368 Q 376 132 376 140 V 162 H 50 V 140 Q 50 132 58 132 Z" fill="#20A69A"/>
+<text x="62" y="152" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Driving Adapters (adapter/in)</text>
+<rect x="304" y="138" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="336.0" y="151" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Inbound</text>
+<text x="62" y="180" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• REST Controllers (/api/v1/*)</text>
+<text x="62" y="196.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• StripeWebhookController (HMAC)</text>
+<text x="62" y="213.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• WebSocket STOMP &amp; GraphQL Read</text>
+<text x="62" y="229.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Runtime MCP Tool Adapter</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="416" y="132" width="326" height="118" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 424 132 H 734 Q 742 132 742 140 V 162 H 416 V 140 Q 416 132 424 132 Z" fill="#0F766E"/>
+<text x="428" y="152" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Driven Adapters (adapter/out)</text>
+<rect x="668.0" y="138" width="66.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="701.0" y="151" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Outbound</text>
+<text x="428" y="180" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• MySQL 8.4 JPA + Transactional Outbox</text>
+<text x="428" y="196.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• MongoDB Spatial Sheets &amp; Audit Logs</text>
+<text x="428" y="213.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Redis Atomic Locks &amp; QR Tokens</text>
+<text x="428" y="229.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Qdrant Vector DB &amp; Stripe ACL</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="50" y="286" width="692" height="112" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 58 286 H 734 Q 742 286 742 294 V 316 H 50 V 294 Q 50 286 58 286 Z" fill="#334155"/>
+<text x="62" y="306" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Application Layer (application/usecase &amp; port/in + port/out)</text>
+<rect x="670" y="292" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="702.0" y="305" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Ports</text>
+<text x="62" y="334" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Interfaces (DIP): EvaluateSpaceFitUseCase, ScheduleVisitUseCase, ConfirmCheckInUseCase</text>
+<text x="62" y="350.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Outbound Ports: PropertyRepositoryPort, SlotLockPort, PaymentGatewayPort, VectorStorePort</text>
+<text x="62" y="367.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">Orchestrates @Transactional boundaries and OutboxEventRecorder without leaking DB details.</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="50" y="434" width="692" height="166" rx="8" fill="#EBF8FF" stroke="#17324D" stroke-width="1.5"/>
+<path d="M 58 434 H 734 Q 742 434 742 442 V 464 H 50 V 442 Q 50 434 58 434 Z" fill="#17324D"/>
+<text x="62" y="454" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">PURE JAVA 21 DOMAIN CORE (domain/model, domain/service, domain/event)</text>
+<rect x="670" y="440" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="702.0" y="453" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Core</text>
+<text x="62" y="482" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">ZERO Framework Imports (Enforced by ArchUnit in CI — no Spring, JPA, Stripe, Mongo)</text>
+<text x="62" y="498.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Aggregates: Property (INV-01, INV-05), VisitRequest (INV-03, INV-04), PaymentTransaction</text>
+<text x="62" y="515.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Value Objects: RoomDimension, AccessSpecification, Money, VisitCheckInToken</text>
+<text x="62" y="531.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Pure Domain Services: SpaceFitCalculator (INV-02), RefundPolicyEvaluator (100% rules)</text>
+<text x="62" y="548.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Dependency Rule: All arrows point INWARD toward Domain Core (SOLID: SRP, OCP, DIP)</text>
+</g>
+<line x1="213" y1="250" x2="213" y2="286" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="166.7" y="251.0" width="92.60000000000001" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#20A69A" stroke-width="0.6"/>
+<text x="213.0" y="262.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#20A69A">Calls Port In</text>
+<line x1="579" y1="286" x2="579" y2="250" stroke="#0F766E" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="514.1" y="251.0" width="129.8" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#0F766E" stroke-width="0.6"/>
+<text x="579.0" y="262.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#0F766E">Implements Port Out</text>
+<line x1="396" y1="398" x2="396" y2="434" stroke="#17324D" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="331.1" y="399.0" width="129.8" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#17324D" stroke-width="0.6"/>
+<text x="396.0" y="410.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#17324D">Invokes Pure Domain</text>
+<g>
+  <rect x="794" y="102" width="740" height="520" rx="10" fill="#F0FDFA" stroke="#20A69A" stroke-width="1.6"/>
+  <rect x="808" y="90" width="564.0" height="24" rx="5" fill="#20A69A"/>
+  <text x="1090.0" y="106" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">Architecture #2 — Frontend &amp; Mobile MVVM / Component-ViewModel Architecture</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="818" y="132" width="692" height="128" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 826 132 H 1502 Q 1510 132 1510 140 V 162 H 818 V 140 Q 818 132 826 132 Z" fill="#20A69A"/>
+<text x="830" y="152" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">View Layer (React 19 Presentational Components &amp; Astro Islands)</text>
+<rect x="1438" y="138" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1470.0" y="151" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">View</text>
+<text x="830" y="180" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Zero direct fetch() or business formulas inside JSX components</text>
+<text x="830" y="196.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• apps/shell + apps/mf-catalog, mf-booking, mf-host, mf-admin</text>
+<text x="830" y="213.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• packages/ui: PropertyCard, SpaceFitBadge, QrPassModal, InvoicePreview</text>
+<text x="830" y="229.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Declaratively binds to ViewModel state &amp; dispatches user intent callbacks</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="818" y="296" width="692" height="134" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 826 296 H 1502 Q 1510 296 1510 304 V 326 H 818 V 304 Q 818 296 826 296 Z" fill="#E67E22"/>
+<text x="830" y="316" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">ViewModel Layer (Custom React Hooks + Zustand Stores + TanStack Query)</text>
+<rect x="1429.5" y="302" width="72.5" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1465.75" y="315" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">ViewModel</text>
+<text x="830" y="344" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Stateful UI Orchestration &amp; Platform Abstraction</text>
+<text x="830" y="360.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• useSpaceFitViewModel(), useTimeSlotLockViewModel(), useQrCheckInViewModel()</text>
+<text x="830" y="377.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• @espacio/auth-store (Zustand singleton: Keycloak PKCE state &amp; RBAC selectors)</text>
+<text x="830" y="393.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• PlatformAdapterProvider (injects Web vs Capacitor MLKit vs Electron safeStorage)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="818" y="466" width="692" height="134" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 826 466 H 1502 Q 1510 466 1510 474 V 496 H 818 V 474 Q 818 466 826 466 Z" fill="#6D28D9"/>
+<text x="830" y="486" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Model &amp; Data Layer (@espacio/api-client + domain-utils + wasm-spatial)</text>
+<rect x="1438" y="472" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1470.0" y="485" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Model</text>
+<text x="830" y="514" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Typed Schemas &amp; Pure Client Computation</text>
+<text x="830" y="530.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• @espacio/api-client: OpenAPI 3.0 generated DTOs &amp; typed HTTP/WS clients</text>
+<text x="830" y="547.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• @espacio/domain-utils: Pure TS Space-Fit INV-02 preview math &amp; QR parsers</text>
+<text x="830" y="563.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• @espacio/wasm-spatial: Rust .wasm 2D sketch compressor &amp; offline QR verifier</text>
+</g>
+<line x1="1164" y1="260" x2="1164" y2="296" stroke="#20A69A" stroke-width="2" marker-end="url(#arrow-teal)"/>
+<rect x="1074.3" y="261.0" width="179.4" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#20A69A" stroke-width="0.6"/>
+<text x="1164.0" y="272.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#20A69A">User Intents / Data Binding</text>
+<line x1="1164" y1="430" x2="1164" y2="466" stroke="#6D28D9" stroke-width="2" marker-end="url(#arrow-purple)"/>
+<rect x="1077.4" y="431.0" width="173.20000000000002" height="16" rx="4" fill="#FFFFFF" fill-opacity="0.92" stroke="#6D28D9" stroke-width="0.6"/>
+<text x="1164.0" y="442.0" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10.2" font-weight="600" fill="#6D28D9">Typed Queries / Wasm Calls</text>
+<g>
+  <rect x="26" y="654" width="1508" height="242" rx="10" fill="#FFF7ED" stroke="#E67E22" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <rect x="40" y="642" width="686.4" height="24" rx="5" fill="#E67E22"/>
+  <text x="383.2" y="658" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">Formal Mapping of 5 Engineering Design Principles Across ESPACIO Modules (Defense Reference)</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="48" y="684" width="280" height="194" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 56 684 H 320 Q 328 684 328 692 V 714 H 48 V 692 Q 48 684 56 684 Z" fill="#17324D"/>
+<text x="60" y="704" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">1. SOLID Principles</text>
+<rect x="256" y="690" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="288.0" y="703" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">SOLID</text>
+<text x="60" y="732" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">SRP: SpaceFitCalculator only math</text>
+<text x="60" y="748.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">OCP: PaymentGatewayPort swaps</text>
+<text x="60" y="765.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  Stripe/PayPal without domain edit</text>
+<text x="60" y="781.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">LSP: Web/Mobile/Desktop adapters</text>
+<text x="60" y="798.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">ISP: Split UseCase &amp; Read/Write</text>
+<text x="60" y="814.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">DIP: Domain owns Outbound Ports</text>
+<text x="60" y="831.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Verified via ArchUnit tests</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="344" y="684" width="280" height="194" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 352 684 H 616 Q 624 684 624 692 V 714 H 344 V 692 Q 344 684 352 684 Z" fill="#20A69A"/>
+<text x="356" y="704" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">2. DRY (Don&#x27;t Repeat Yourself)</text>
+<rect x="552" y="690" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="584.0" y="703" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">DRY</text>
+<text x="356" y="732" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• OpenAPI YAML -&gt; auto-generates</text>
+<text x="356" y="748.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  @espacio/api-client TS DTOs</text>
+<text x="356" y="765.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Single Figma tokens.css shared</text>
+<text x="356" y="781.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  across Shell + 4 MFEs + Astro</text>
+<text x="356" y="798.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Shared @espacio/auth-store</text>
+<text x="356" y="814.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  eliminates per-MFE auth code</text>
+<text x="356" y="831.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">packages/contracts = 1 truth</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="640" y="684" width="280" height="194" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 648 684 H 912 Q 920 684 920 692 V 714 H 640 V 692 Q 640 684 648 684 Z" fill="#0F766E"/>
+<text x="652" y="704" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">3. KISS (Keep It Simple)</text>
+<rect x="848" y="690" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="880.0" y="703" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">KISS</text>
+<text x="652" y="732" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Deterministic INV-01 rules replace</text>
+<text x="652" y="748.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  complex human moderation queues</text>
+<text x="652" y="765.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Single Redis SET NX PX 600000</text>
+<text x="652" y="781.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  replaces distributed 2PC locks</text>
+<text x="652" y="798.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Astro ships 0 KB JS for public</text>
+<text x="652" y="814.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  street-QR sheets</text>
+<text x="652" y="831.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Simple, verifiable invariants</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="936" y="684" width="280" height="194" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 944 684 H 1208 Q 1216 684 1216 692 V 714 H 936 V 692 Q 936 684 944 684 Z" fill="#E67E22"/>
+<text x="948" y="704" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">4. Coupling &amp; Cohesion</text>
+<rect x="1129.0" y="690" width="79.0" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1168.5" y="703" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Modularity</text>
+<text x="948" y="732" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• 4 DDD Bounded Contexts interact</text>
+<text x="948" y="748.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  only via Outbox Domain Events</text>
+<text x="948" y="765.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• 4 Independent MFE remotes with</text>
+<text x="948" y="781.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  typed Event Bus contracts</text>
+<text x="948" y="798.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">• Stripe ACL isolates SDK changes</text>
+<text x="948" y="814.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  from Billing domain model</text>
+<text x="948" y="831.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Zero cross-context DB joins</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="1232" y="684" width="280" height="194" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<path d="M 1240 684 H 1504 Q 1512 684 1512 692 V 714 H 1232 V 692 Q 1232 684 1240 684 Z" fill="#6D28D9"/>
+<text x="1244" y="704" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">5. GRASP Patterns</text>
+<rect x="1440" y="690" width="64" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="1472.0" y="703" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">GRASP</text>
+<text x="1244" y="732" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Info Expert: Property validates</text>
+<text x="1244" y="748.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.2" fill="#334155">  its own INV-01 dimensions</text>
+<text x="1244" y="765.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Controller: UseCase orchestrators</text>
+<text x="1244" y="781.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Polymorphism: PlatformAdapter</text>
+<text x="1244" y="798.0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Protected Variations: Ports/ACL</text>
+<text x="1244" y="814.5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1E242B">Pure Fabrication: OutboxRelay</text>
+<text x="1244" y="831.0" font-family="Consolas, monospace" font-size="10.8" fill="#0F766E">Clean responsibility assignment</text>
+</g>
+  <text x="1536" y="918" text-anchor="end" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="11" fill="#64748B">ESPACIO Platform Architecture • Universidad Central del Ecuador (GPWP 2026–2027)</text>
+</svg>
